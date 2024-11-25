@@ -1,0 +1,218 @@
+/* General Reset */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+  background: url("/assets/bgimg.jpg") no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Default Screen Layout */
+.screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Heading and Paragraph Styles */
+h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  animation: glow 2s infinite alternate;
+  text-align: end;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Input Styling */
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  width: 300px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: #00ffff;
+  box-shadow: 0 0 5px #00ffff;
+}
+
+/* Button Styles */
+button {
+  background-color: #222;
+  color: #00ffff;
+  border: 1px solid #00ffff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 10px #00ffff;
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #00ffff;
+  color: #222;
+  box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+  transform: scale(1.05);
+}
+
+/* Button Feedback Styles */
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+/* Highlight Correct and Incorrect Answers */
+button.correct {
+  background-color: green !important;
+  color: white;
+}
+
+button.incorrect {
+  background-color: red !important;
+  color: white;
+}
+
+/* Retry Button */
+#retry-btn {
+  background-color: #222;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff0000;
+  transition: 0.3s;
+}
+
+#retry-btn:hover {
+  background-color: #ff0000;
+  color: #222;
+  box-shadow: 0 0 20px #ff3333, 0 0 40px #ff3333;
+  transform: scale(1.05);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto 20px;
+}
+
+#score {
+  font-size: 1.5rem;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+/* Question Container */
+#question-container {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 0 20px #00ffff;
+  animation: fadeIn 1s ease-out;
+}
+
+#options button {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+}
+
+/* Animations */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  }
+  to {
+    text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  input[type="text"] {
+    width: 250px;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  #question-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  input[type="text"] {
+    width: 200px;
+    font-size: 0.8rem;
+  }
+
+  button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"] {
+    width: 180px;
+    font-size: 0.7rem;
+  }
+
+  button {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+  }
+
+  #question-container {
+    padding: 15px;
+  }
+}

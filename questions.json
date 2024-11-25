@@ -1,0 +1,72 @@
+[
+  {
+    "question": "What does HTML stand for?",
+    "options": [
+      "HyperText Markup Language",
+      "HighText Machine Language",
+      "HyperTransfer Markup Language",
+      "None of the above"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which HTML tag is used to define an internal style sheet?",
+    "options": ["<script>", "<style>", "<css>", "<link>"],
+    "correct": 1
+  },
+  {
+    "question": "What does CSS stand for?",
+    "options": [
+      "Cascading Style Sheets",
+      "Creative Style Sheets",
+      "Computer Style Sheets",
+      "Colorful Style Sheets"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "Which property is used to change the background color in CSS?",
+    "options": ["color", "bgColor", "background-color", "background"],
+    "correct": 2
+  },
+  {
+    "question": "Which JavaScript method is used to write content into an alert box?",
+    "options": ["alert()", "msgBox()", "write()", "console.log()"],
+    "correct": 0
+  },
+  {
+    "question": "Which symbol is used for comments in CSS?",
+    "options": ["//", "#", "/* */", "<!-- -->"],
+    "correct": 2
+  },
+  {
+    "question": "What is the correct syntax for referring to an external script in JavaScript?",
+    "options": [
+      "<script src='script.js'>",
+      "<script href='script.js'>",
+      "<script link='script.js'>",
+      "<script file='script.js'>"
+    ],
+    "correct": 0
+  },
+  {
+    "question": "What is the purpose of the 'alt' attribute in an image tag?",
+    "options": [
+      "To define the size",
+      "To specify alternative text",
+      "To change the style",
+      "To link the image"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "Which JavaScript keyword declares a variable?",
+    "options": ["var", "let", "const", "All of the above"],
+    "correct": 3
+  },
+  {
+    "question": "Which HTML element is used to define navigation links?",
+    "options": ["<nav>", "<link>", "<navigate>", "<menu>"],
+    "correct": 0
+  }
+]
